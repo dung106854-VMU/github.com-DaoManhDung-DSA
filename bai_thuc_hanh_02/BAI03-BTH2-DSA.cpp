@@ -14,19 +14,16 @@ typedef struct    {
     	Node *pTail;
     	int spt;
 }LList;
-/////////////////////////////////////
 void initList(LList *L)
     {
     	L->pHead = NULL;
     	L->pTail = NULL;
     	L->spt = 0;
     }
-/////////////////////////////////////
 int emptyList(LList L)
  {
     	return (L.spt == 0); 
 }
-/////////////////////////////////////
 void insert_Head(LList *L, Data x)
     {
     	Node *pp;
@@ -43,7 +40,6 @@ void insert_Head(LList *L, Data x)
     		}
     	L->spt++;
     }
-/////////////////////////////////////
 void insert_Tail(LList *L, Data x)
     {
     	Node *pp;
@@ -61,7 +57,6 @@ void insert_Tail(LList *L, Data x)
     		}
     	L->spt++;
     }
-///////////////////////////////////////
 void insert_between(LList *L, Data x)
     {	int stt;
     	printf("Ban muon chen vao sau phan tu thu may?><:");
@@ -77,7 +72,6 @@ void insert_between(LList *L, Data x)
     	currentNode->link=pp;
     	L->spt++;
     }  	    
-///////////////////////////////////////
 void nhap(Data *x){
     printf("Nhap ma sv: ");
     scanf("%d", &(x->masv));
@@ -103,13 +97,12 @@ void processList(LList L){
         	pp = pp->link;
     	}
 }
-/////////////////////////////////////////
 
 int main(){
     LList L;
 	int kt = 0;
 	Data x;
-	initList(&L); //tao ra 1 ds rong
+	initList(&L);
 	do{
 	    printf("\nChuong trinh lam viec voi DSLK don SV\n");
 	    printf("\n1: Them nut vao dau danh sach");
