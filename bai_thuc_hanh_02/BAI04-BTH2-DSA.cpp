@@ -119,6 +119,7 @@ void sapxep(LList *L) {
             }
         }
     }
+	printf("Sap xep thanh cong");
 }
 int main(){
     LList L;
